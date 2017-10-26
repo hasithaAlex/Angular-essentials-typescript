@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  variableNumber: number;
+  variablerootNameNumber: number;
+
+  rootName = 'Maximilan';
+  onRootNameChange(newName) {
+    this.rootName = newName;
+  }
 }

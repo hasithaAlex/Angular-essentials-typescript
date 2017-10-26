@@ -1,14 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { UserComponent } from './16_component/user.component';
+import { UserEventComponent } from './18_event/user.event.component';
+import { UserInputComponant } from './21_input/user.input.component';
+import { UserEventOutputComponent } from './22_output/user.output.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserComponent,
+    UserEventComponent,
+    UserInputComponant,
+    UserEventOutputComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
