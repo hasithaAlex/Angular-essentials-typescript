@@ -1,0 +1,2 @@
+JS        > npm install lodash --save
+typescript> npm install --save @types/lodash
