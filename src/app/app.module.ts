@@ -8,7 +8,7 @@ import { UserEventComponent } from './18_event/user.event.component';
 import { UserInputComponant } from './21_input/user.input.component';
 import { UserEventOutputComponent } from './22_output/user.output.component';
 import { TriedParty } from "./31_3rd_Party_Libraries/third.party.component";
-
+import { ngForComponent } from './37_OutputtingListswithngFor/user.ngFor.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +16,8 @@ import { TriedParty } from "./31_3rd_Party_Libraries/third.party.component";
     UserEventComponent,
     UserInputComponant,
     UserEventOutputComponent,
-    TriedParty
+    TriedParty,
+    ngForComponent
   ],
   imports: [
     BrowserModule,

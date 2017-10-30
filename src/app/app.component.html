@@ -1,6 +1,6 @@
 
 <app-user></app-user>
-<hr>
+<hr><hr>
 event.target.value
 <app-user-event></app-user-event>
 <hr>
@@ -14,5 +14,6 @@ event.target.value
 @output()
 <app-user-output [name]="rootName" (chaildNameChange)="onRootNameChange($event)"></app-user-output>
 {{rootName}}
-<hr>
+<hr><hr>
 <app-tried-party></app-tried-party>
+<app-ngfor [items]="rootItems" (itemAdded)="onItemWasAdded($event)" ></app-ngfor>
