@@ -1,6 +1,7 @@
 
 <app-user></app-user>
 <hr><hr>
+<label> 02 Understanding Components </label>
 event.target.value
 <app-user-event></app-user-event>
 <hr>
@@ -15,5 +16,19 @@ event.target.value
 <app-user-output [name]="rootName" (chaildNameChange)="onRootNameChange($event)"></app-user-output>
 {{rootName}}
 <hr><hr>
+<label> 03 Debugging  Using 3rd Party Libraries </label>
 <app-tried-party></app-tried-party>
+<hr><hr>
+<label> 04 Extra Features with Directives </label>
 <app-ngfor [items]="rootItems" (itemAdded)="onItemWasAdded($event)" ></app-ngfor>
+<hr><hr>
+<label> 05 Angular in Practice Starting the Course Project </label>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-test-app-tabs></app-test-app-tabs>
+    </div>
+  </div>
+</div>

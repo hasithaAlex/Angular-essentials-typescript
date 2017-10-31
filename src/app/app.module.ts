@@ -9,6 +9,10 @@ import { UserInputComponant } from './21_input/user.input.component';
 import { UserEventOutputComponent } from './22_output/user.output.component';
 import { TriedParty } from "./31_3rd_Party_Libraries/third.party.component";
 import { ngForComponent } from './37_OutputtingListswithngFor/user.ngFor.component';
+import { TestAppItemComponent } from './44_new-app/test-app-item/test-app-item.component';
+import { TestAppListComponent } from './44_new-app/test-app-list/test-app-list.component';
+import { TestAppTabsComponent } from './44_new-app/test-app-tabs/test-app-tabs.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +21,11 @@ import { ngForComponent } from './37_OutputtingListswithngFor/user.ngFor.compone
     UserInputComponant,
     UserEventOutputComponent,
     TriedParty,
-    ngForComponent
+    ngForComponent,
+
+    TestAppTabsComponent,
+    TestAppItemComponent,
+    TestAppListComponent
   ],
   imports: [
     BrowserModule,
