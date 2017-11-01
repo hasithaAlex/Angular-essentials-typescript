@@ -15,6 +15,7 @@ import { TestAppTabsComponent } from './44_new-app/test-app-tabs/test-app-tabs.c
 
 import { StarWarsService } from './54_Services/star-wars.service';
 import { LogService } from './56_log/log.service';
+import { CreateCharacterComponent } from './63_Validation/create-character/create-character.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { LogService } from './56_log/log.service';
     TestAppTabsComponent,
     TestAppItemComponent,
     TestAppListComponent,
+    CreateCharacterComponent,
 
 
   ],
