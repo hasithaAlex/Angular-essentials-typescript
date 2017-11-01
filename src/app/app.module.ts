@@ -13,6 +13,9 @@ import { TestAppItemComponent } from './44_new-app/test-app-item/test-app-item.c
 import { TestAppListComponent } from './44_new-app/test-app-list/test-app-list.component';
 import { TestAppTabsComponent } from './44_new-app/test-app-tabs/test-app-tabs.component';
 
+import { StarWarsService } from './54_Services/star-wars.service';
+import { LogService } from './56_log/log.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,13 +28,18 @@ import { TestAppTabsComponent } from './44_new-app/test-app-tabs/test-app-tabs.c
 
     TestAppTabsComponent,
     TestAppItemComponent,
-    TestAppListComponent
+    TestAppListComponent,
+
+
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    StarWarsService,
+    LogService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -14,11 +14,8 @@ export class AppComponent {
     this.rootName = newName;
   }
 
-
-
   rootItems  = ['apple','orange','green apple']
-  onItemWasAdded(newItem)
-  {
+  onItemWasAdded(newItem) {
     this.rootItems.push(newItem);
   }
 }

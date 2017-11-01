@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
+import { StarWarsService } from './../../54_Services/star-wars.service';
 
 @Component({
   selector: 'app-test-app-item',
@@ -8,14 +9,16 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class TestAppItemComponent implements OnInit {
 
   @Input() character;
-  @Output() sideAssigned = new EventEmitter<{name: string, side: string}>();
+  wsServise: StarWarsService;
 
-  constructor() { }
+  constructor(wsServise: StarWarsService) {
+    this.wsServise = wsServise;
+  }
 
   ngOnInit() {
   }
 
   onAssign(side) {
-    this.sideAssigned.emit({name: this.character.name, side: side})
+    this.wsServise.onSideChosen({name: this.character.name, side: side});
   }
 }
